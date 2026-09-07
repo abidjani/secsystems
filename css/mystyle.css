@@ -1,0 +1,267 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --blue: #002D5A;
+  --yellow: #D8F96F;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+  font-family: "Inter", sans-serif;
+  background: var(--blue);
+}
+
+.container-fluid,
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  padding: 0.5rem 0;
+}
+
+.transparent {
+  background: none;
+}
+
+.main_logo {
+  max-width: 18rem;
+  margin-right: 5rem;
+}
+
+.my_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-right: 2rem;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active,
+.nav-link.show {
+  color: var(--yellow) !important;
+}
+
+.menu_icon {
+  font-size: 2rem;
+  color: var(--yellow);
+}
+
+.nav_mobile_right {
+  display: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* =========================
+   BOOK A DEMO BUTTON
+========================= */
+
+.book-a-demo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-width: 22rem;
+  height: 4.6rem;
+
+  padding: 0.5rem 0.5rem 0.5rem 2.8rem;
+
+  border: 0.2rem solid var(--yellow);
+  border-radius: 5rem;
+
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  background: transparent;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.book-a-demo-icon {
+  width: 3.6rem;
+  height: 3.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--blue);
+
+  padding-left: 0.2rem;
+
+  border-radius: 50%;
+
+  font-size: 1.5rem;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.book-a-demo-button:hover {
+  background: var(--yellow);
+  color: var(--blue);
+}
+
+.book-a-demo-button:hover .book-a-demo-icon {
+  background: var(--blue);
+  color: var(--yellow);
+}
+
+
+/* =========================
+   DROPDOWN
+========================= */
+
+/* Remove Bootstrap default arrow */
+
+.main-menu .dropdown-toggle::after {
+  display: none;
+}
+
+/* FontAwesome arrow */
+
+.main-menu .dropdown-icon {
+  color: var(--yellow);
+  font-size: 0.8rem;
+  margin-left: 0.6rem;
+  transition: transform 0.25s ease;
+}
+
+.main-menu .dropdown-toggle.show .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+
+/* Dropdown container */
+
+.main-menu .dropdown-menu {
+  min-width: 22rem;
+
+  margin-top: 1rem;
+  padding: 1rem;
+
+  background: rgba(0, 45, 90, 0.98);
+
+  border: 1px solid rgba(216, 249, 111, 0.18);
+  border-radius: 1.2rem;
+
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+
+/* Dropdown links */
+
+.main-menu .dropdown-item {
+  position: relative;
+
+  padding: 1rem 1.4rem;
+  margin-bottom: 0.3rem;
+
+  border-radius: 0.7rem;
+
+  color: #ffffff;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.main-menu .dropdown-item:hover,
+.main-menu .dropdown-item:focus {
+  background: rgba(216, 249, 111, 0.1);
+  color: var(--yellow);
+  padding-left: 1.8rem;
+}
+
+
+/* Dropdown yellow indicator */
+
+.main-menu .dropdown-item::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  width: 0.3rem;
+  height: 0;
+
+  background: var(--yellow);
+  border-radius: 1rem;
+
+  transform: translateY(-50%);
+
+  transition: height 0.2s ease;
+}
+
+.main-menu .dropdown-item:hover::before,
+.main-menu .dropdown-item:focus::before {
+  height: 2rem;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.main-hero-section {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: url("../images/hero-main-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-hero-section::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.25);
+}

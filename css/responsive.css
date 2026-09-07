@@ -1,0 +1,472 @@
+/* =====================================================
+   BELOW 1200px
+===================================================== */
+
+@media only screen and (max-width: 1200px) {
+
+  .nav-link {
+    margin-right: 1.5rem;
+  }
+
+  .book-a-demo-button {
+    min-width: 17rem;
+  }
+
+  .main_logo {
+    max-width: 15rem;
+    margin-right: 4rem;
+  }
+
+}
+
+
+/* =====================================================
+   TABLET + MOBILE
+===================================================== */
+
+@media only screen and (max-width: 991.98px) {
+
+  html {
+    font-size: 55.5%;
+  }
+
+
+  /* =========================
+     NAVBAR
+  ========================= */
+
+  .navbar {
+    padding: 1.5rem 2rem;
+    background: transparent !important;
+  }
+
+  .navbar .container {
+    max-width: 100%;
+  }
+
+  .main_logo {
+    max-width: 17rem;
+    margin-right: 0;
+  }
+
+  .nav_mobile_right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .navbar-toggler {
+    padding: 0;
+    border: 0;
+    background: transparent !important;
+  }
+
+  .navbar-toggler:hover,
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    background: transparent !important;
+    border: 0;
+    outline: none;
+    box-shadow: none !important;
+  }
+
+  .menu_icon {
+    font-size: 2.6rem;
+    cursor: pointer;
+  }
+
+
+  /* =========================
+     OFFCANVAS
+  ========================= */
+
+  .navbar .offcanvas {
+    width: 38rem;
+    max-width: 88%;
+
+    background: var(--blue);
+
+    border-right: 1px solid rgba(216, 249, 111, 0.12);
+
+    box-shadow: 1rem 0 4rem rgba(0, 0, 0, 0.25);
+
+    transform: translateX(-100%);
+
+    transition:
+      transform 0.35s cubic-bezier(0.22, 1, 0.36, 1) !important;
+  }
+
+  .navbar .offcanvas.showing,
+  .navbar .offcanvas.show {
+    transform: translateX(0);
+    background: var(--blue);
+  }
+
+  .navbar .offcanvas.hiding {
+    transform: translateX(-100%);
+    transition-duration: 0.25s !important;
+  }
+
+
+  /* Offcanvas header */
+
+  .offcanvas-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 2.5rem 2.5rem 2rem;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .offcanvas-header .main_logo {
+    max-width: 16rem;
+  }
+
+  .offcanvas-header .menu_icon {
+    margin-left: auto;
+    margin-right: 0.5rem;
+
+    font-size: 2rem;
+  }
+
+
+  /* Offcanvas body */
+
+  .offcanvas-body.my_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+
+    margin: 0;
+    padding: 2.5rem;
+
+    text-align: left;
+
+    overflow-y: auto;
+  }
+
+
+  /* =========================
+     MAIN MENU
+  ========================= */
+
+  .main-menu {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main-menu .nav-item {
+    width: 100%;
+    margin: 0;
+
+    opacity: 0;
+
+    transform: translateX(-1.5rem);
+
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .main-menu .nav-link {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 1.4rem 0.5rem;
+
+    color: #ffffff;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .main-menu .nav-link:hover,
+  .main-menu .nav-link:focus,
+  .main-menu .nav-link.active,
+  .main-menu .nav-link.show {
+    color: var(--yellow) !important;
+  }
+
+
+  /* Reveal items */
+
+  .offcanvas.show .main-menu .nav-item {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+  /* Stagger */
+
+  .offcanvas.show .main-menu .nav-item:nth-child(1) {
+    transition-delay: 0.05s;
+  }
+
+  .offcanvas.show .main-menu .nav-item:nth-child(2) {
+    transition-delay: 0.08s;
+  }
+
+  .offcanvas.show .main-menu .nav-item:nth-child(3) {
+    transition-delay: 0.11s;
+  }
+
+  .offcanvas.show .main-menu .nav-item:nth-child(4) {
+    transition-delay: 0.14s;
+  }
+
+  .offcanvas.show .main-menu .nav-item:nth-child(5) {
+    transition-delay: 0.17s;
+  }
+
+  .offcanvas.show .main-menu .nav-item:nth-child(6) {
+    transition-delay: 0.20s;
+  }
+
+
+  /* Fast closing */
+
+  .offcanvas.hiding .main-menu .nav-item {
+    opacity: 0;
+
+    transform: translateX(-0.8rem);
+
+    transition-delay: 0s !important;
+    transition-duration: 0.12s;
+  }
+
+
+  /* =========================
+     DROPDOWNS
+  ========================= */
+
+  .main-menu .dropdown-icon {
+    margin-left: auto;
+    font-size: 0.9rem;
+  }
+
+  .main-menu .dropdown-menu {
+    position: static !important;
+
+    display: none;
+
+    width: 100%;
+    min-width: 100%;
+
+    margin: 0.5rem 0 1rem;
+    padding: 0.7rem;
+
+    transform: none !important;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(216, 249, 111, 0.12);
+    border-radius: 1rem;
+
+    box-shadow: none;
+  }
+
+  .main-menu .dropdown-menu.show {
+    display: block;
+  }
+
+  .main-menu .dropdown-item {
+    margin: 0.2rem 0;
+    padding: 1.2rem 1.4rem;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 1.5rem;
+
+    border-radius: 0.7rem;
+  }
+
+  .main-menu .dropdown-item:hover,
+  .main-menu .dropdown-item:focus,
+  .main-menu .dropdown-item.active {
+    padding-left: 1.8rem;
+
+    color: var(--yellow);
+
+    background: rgba(216, 249, 111, 0.08);
+  }
+
+  .main-menu .dropdown-item:hover::before,
+  .main-menu .dropdown-item:focus::before,
+  .main-menu .dropdown-item.active::before {
+    height: 1.8rem;
+  }
+
+
+  /* =========================
+     BOOK A DEMO
+  ========================= */
+
+  .offcanvas-body > .navbar-nav:last-child {
+    width: 100%;
+
+    margin-top: 3rem;
+
+    opacity: 0;
+
+    transform: translateY(1rem);
+
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .offcanvas-body > .navbar-nav:last-child .nav-item {
+    width: 100%;
+  }
+
+  .offcanvas.show .offcanvas-body > .navbar-nav:last-child {
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.22s;
+  }
+
+  .offcanvas.hiding .offcanvas-body > .navbar-nav:last-child {
+    opacity: 0;
+
+    transform: translateY(0.5rem);
+
+    transition-delay: 0s !important;
+    transition-duration: 0.1s;
+  }
+
+  .book-a-demo-button {
+    width: 100%;
+    min-width: 0;
+
+    height: 5rem;
+
+    padding-left: 2.2rem;
+
+    font-size: 1.6rem;
+  }
+
+  .book-a-demo-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media only screen and (max-width: 768px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  .navbar {
+    padding: 1.4rem 1.5rem;
+  }
+
+  .main_logo {
+    max-width: 15rem;
+  }
+
+  .navbar .offcanvas {
+    width: 36rem;
+    max-width: 90%;
+  }
+
+  .offcanvas-header {
+    padding: 2.2rem;
+  }
+
+  .offcanvas-body.my_menu {
+    padding: 2rem 2.2rem;
+  }
+
+  .main-menu .nav-link {
+    padding: 1.35rem 0.4rem;
+    font-size: 1.8rem;
+  }
+
+  .main-menu .dropdown-item {
+    font-size: 1.45rem;
+  }
+
+  .menu_icon {
+    font-size: 2.7rem;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media only screen and (max-width: 576px) {
+
+  html {
+    font-size: 52.5%;
+  }
+
+  .navbar {
+    padding: 1.3rem 1.2rem;
+  }
+
+  .main_logo {
+    max-width: 14rem;
+  }
+
+  .navbar .offcanvas {
+    width: 32rem;
+    max-width: 90%;
+  }
+
+  .offcanvas-header {
+    padding: 2rem;
+  }
+
+  .offcanvas-body.my_menu {
+    padding: 1.8rem 2rem;
+  }
+
+  .main-menu .nav-link {
+    padding: 1.3rem 0.3rem;
+    font-size: 1.75rem;
+  }
+
+  .main-menu .dropdown-menu {
+    padding: 0.6rem;
+  }
+
+  .main-menu .dropdown-item {
+    padding: 1.1rem 1.3rem;
+    font-size: 1.4rem;
+  }
+
+  .book-a-demo-button {
+    height: 4.8rem;
+    font-size: 1.5rem;
+  }
+
+  .book-a-demo-icon {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+
+}
