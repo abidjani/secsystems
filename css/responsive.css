@@ -1,3 +1,21 @@
+@media only screen and (max-width: 1399.98px) {
+.main-hero-section{
+	height:auto;
+	padding-bottom:8rem;
+	padding-top:8rem;
+}
+ .hero-heading{
+	font-size:5rem;
+	line-height:6rem;
+}
+.hero_contents p{
+	font-size:2.2rem;
+}
+.heavy-button{
+	padding:1.2rem 2.4rem;
+}
+}
+
 /* =====================================================
    BELOW 1200px
 ===================================================== */
@@ -17,6 +35,7 @@
     margin-right: 4rem;
   }
 
+ 
 }
 
 
@@ -364,6 +383,13 @@
     height: 4rem;
   }
 
+  .hero-card img{
+	max-width:7rem;
+  }
+  .hero-card p{
+	font-size:1.8rem;
+	margin-top:1rem;
+}
 }
 
 
@@ -410,8 +436,16 @@
   .menu_icon {
     font-size: 2.7rem;
   }
+  .hero_contents{
+	max-width:100%
+  }
+  .hero-heading{
+	font-size:4.5rem;
+	line-height:5.5rem;
+  }
 
 }
+
 
 
 /* =====================================================
@@ -423,7 +457,9 @@
   html {
     font-size: 52.5%;
   }
-
+.hero_contents{
+	max-width:98%;
+}
   .navbar {
     padding: 1.3rem 1.2rem;
   }
@@ -468,5 +504,11 @@
     width: 3.8rem;
     height: 3.8rem;
   }
-
+  .hero_cards{
+	flex-direction:row;
+	flex-wrap:wrap;
+  }
+  .hero-card{
+	width:50%;
+  }
 }
