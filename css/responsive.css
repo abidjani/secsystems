@@ -4,16 +4,6 @@
 	padding-bottom:8rem;
 	padding-top:8rem;
 }
- .hero-heading{
-	font-size:5rem;
-	line-height:6rem;
-}
-.hero_contents p{
-	font-size:2.2rem;
-}
-.heavy-button{
-	padding:1.2rem 2.4rem;
-}
 }
 
 /* =====================================================
@@ -35,6 +25,16 @@
     margin-right: 4rem;
   }
 
+ .hero-heading{
+	font-size:5rem;
+	line-height:6rem;
+}
+.hero_contents p{
+	font-size:2.2rem;
+}
+.heavy-button{
+	padding:1.2rem 2.4rem;
+}
  
 }
 
@@ -457,8 +457,11 @@
   html {
     font-size: 52.5%;
   }
+      .main-hero-section {
+	padding-top:4rem
+	}
 .hero_contents{
-	max-width:98%;
+	max-width:96%;
 }
   .navbar {
     padding: 1.3rem 1.2rem;
@@ -510,5 +513,27 @@
   }
   .hero-card{
 	width:50%;
+  }
+  .hero_contents {
+	padding-top: 6rem;
+  }
+  .hero-heading{
+	font-size:3rem;
+	line-height:4rem;
+	text-align:left;
+	font-weight:600;
+  }
+  .hero_contents p{
+	font-size:2rem;
+	text-align:left;
+	opacity:0.9;
+	margin-top:2rem
+  }
+  .heavy-button{
+	margin-left:0;
+	display:inline-block;
+	margin-left:0!important;
+	margin-top:2rem;
+	font-size:2rem;
   }
 }

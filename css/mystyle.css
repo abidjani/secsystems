@@ -35,6 +35,10 @@ body {
 
 .navbar {
   padding: 0.5rem 0;
+   background: transparent;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .transparent {
@@ -81,7 +85,11 @@ body {
   box-shadow: none;
 }
 
-
+.navbar.navbar-scrolled {
+  background: var(--blue);
+   border-bottom: 1px solid rgba(216, 249, 111, 0.1);
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.15);
+}
 /* =========================
    BOOK A DEMO BUTTON
 ========================= */
