@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+  >
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="css/fontawesome.css"
+  >
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+    rel="stylesheet"
+  >
+<!-- slickslider -->
+    <link rel="stylesheet" type="text/css" href="css/slick-slider/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-slider/slick.css">
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="css/mystyle.css"
+  >
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="css/responsive.css"
+  >
+
+  <link
+    rel="icon"
+    href="images/favicon.png"
+    type="image/png"
+    sizes="16x16"
+  >
+
+  <title>AssetGuard AI</title>
+</head>
+
+<body>
+
+  
+
+  <!-- Hero -->
+  <section class="main-hero-section">
+    <nav class="navbar navbar-expand-lg fixed-top transparent">
+    <div class="container">
+
+      <!-- Logo -->
+      <a href="index.html" class="navbar-brand">
+        <img
+          src="images/logo.png"
+          class="img-fluid main_logo"
+          alt="AssetGuard AI Logo"
+        >
+      </a>
+
+      <!-- Mobile Right -->
+      <div class="nav_mobile_right">
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#main_navbar"
+          aria-controls="main_navbar"
+        >
+          <i class="fa fa-bars menu_icon"></i>
+        </button>
+
+      </div>
+
+      <!-- Offcanvas -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="main_navbar"
+        aria-labelledby="mainNavbarLabel"
+      >
+
+        <div class="offcanvas-header">
+
+          <a href="index.html" class="navbar-brand">
+            <img
+              src="images/logo.png"
+              class="img-fluid main_logo"
+              alt="AssetGuard AI Logo"
+            >
+          </a>
+
+          <i
+            class="fa fa-times menu_icon"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></i>
+
+        </div>
+
+        <div class="offcanvas-body my_menu">
+
+          <!-- Main Menu -->
+          <ul class="navbar-nav main-menu">
+
+            <!-- Products -->
+            <li class="nav-item dropdown mega-nav-item">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                Products <i class="fa fa-chevron-down dropdown-icon"></i>
+              </a>
+              <div class="dropdown-menu mega-menu mega-reference-menu">
+                <div class="mega-reference-grid">
+                  <div class="mega-menu-column mega-menu-featured">
+                    <div class="mega-menu-label">PRODUCTS</div>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fas fa-shield-alt"></i></span><span><strong>Safety &amp; Security</strong><small>Real-time AI surveillance for proactive security.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fas fa-chart-bar"></i></span><span><strong>Analytics</strong><small>Turn video activity into useful operational insights.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-search"></i></span><span><strong>Forensics Quick Find</strong><small>Find and follow people of interest across cameras.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-car"></i></span><span><strong>Licence Plate Recognition</strong><small>Detect and track licence plates in real time.</small></span></a>
+                  </div>
+                  <div class="mega-menu-column">
+                    <div class="mega-menu-label mega-menu-label-spacer">PRODUCTS</div>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-user-secret"></i></span><span><strong>Facial Recognition</strong><small>Identify selected individuals quickly and securely.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-paper-plane"></i></span><span><strong>Relay Agent</strong><small>Route important event alerts to your team.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-filter"></i></span><span><strong>Triage Agent</strong><small>Filter events so operators focus on what matters.</small></span></a>
+                    <a href="#" class="mega-menu-link mega-view-all"><span class="mega-icon"><i class="fa fa-arrow-right"></i></span><span><strong>View all products</strong><small>Explore the complete AI security suite.</small></span></a>
+                  </div>
+                  <div class="mega-visual-card">
+                    <img src="images/placeholder.jpg" alt="Product preview placeholder">
+                    <div class="mega-visual-content"><span>FEATURED</span><h4>AI-powered video intelligence</h4><p>Use this area for your product image, featured story or campaign.</p><a href="#">Learn more <i class="fa fa-arrow-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Industries -->
+            <li class="nav-item dropdown mega-nav-item">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                Industries <i class="fa fa-chevron-down dropdown-icon"></i>
+              </a>
+              <div class="dropdown-menu mega-menu mega-reference-menu">
+                <div class="mega-reference-grid">
+                  <div class="mega-menu-column mega-menu-featured">
+                    <div class="mega-menu-label">INDUSTRIES</div>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-shopping-bag"></i></span><span><strong>Retail &amp; Mall Management</strong><small>Improve awareness across busy retail environments.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-graduation-cap"></i></span><span><strong>Education</strong><small>Help security teams monitor large campuses.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-bed"></i></span><span><strong>Hotels &amp; Hospitality</strong><small>Support safer guest and staff environments.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-building"></i></span><span><strong>Commercial Properties</strong><small>Protect buildings, tenants and critical assets.</small></span></a>
+                  </div>
+                  <div class="mega-menu-column">
+                    <div class="mega-menu-label mega-menu-label-spacer">INDUSTRIES</div>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fas fa-video"></i></span><span><strong>Remote Guarding</strong><small>Extend operator coverage across multiple locations.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-university"></i></span><span><strong>Cultural Properties</strong><small>Protect visitors, collections and facilities.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-map-marker"></i></span><span><strong>Safe Cities</strong><small>Support situational awareness across public spaces.</small></span></a>
+                    <a href="#" class="mega-menu-link mega-view-all"><span class="mega-icon"><i class="fa fa-arrow-right"></i></span><span><strong>View all industries</strong><small>See more environments AssetGuard can support.</small></span></a>
+                  </div>
+                  <div class="mega-visual-card">
+                    <img src="images/placeholder.jpg" alt="Industry preview placeholder">
+                    <div class="mega-visual-content"><span>INDUSTRY SPOTLIGHT</span><h4>Security for complex sites</h4><p>Replace this placeholder with your preferred industry image.</p><a href="#">Explore industries <i class="fa fa-arrow-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Solutions -->
+            <li class="nav-item dropdown mega-nav-item">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                Solutions <i class="fa fa-chevron-down dropdown-icon"></i>
+              </a>
+              <div class="dropdown-menu mega-menu mega-reference-menu">
+                <div class="mega-reference-grid">
+                  <div class="mega-menu-column mega-menu-featured">
+                    <div class="mega-menu-label">SECURITY SOLUTIONS</div>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-eye"></i></span><span><strong>AI Video Analytics</strong><small>Detect unusual activity across existing cameras.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-bell"></i></span><span><strong>Real-Time Threat Detection</strong><small>Surface important incidents while they are happening.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-crosshairs"></i></span><span><strong>Intrusion Detection</strong><small>Identify unauthorised access to protected areas.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-users"></i></span><span><strong>Behaviour Monitoring</strong><small>Focus attention on activity that needs review.</small></span></a>
+                  </div>
+                  <div class="mega-menu-column">
+                    <div class="mega-menu-label">OPERATIONS</div>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-desktop"></i></span><span><strong>Control Room Efficiency</strong><small>Help operators manage more cameras effectively.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-exclamation-triangle"></i></span><span><strong>Safety &amp; Hazard Detection</strong><small>Surface potentially unsafe events for faster response.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-search-plus"></i></span><span><strong>Video Investigation</strong><small>Reduce the time spent searching recorded footage.</small></span></a>
+                    <a href="#" class="mega-menu-link mega-view-all"><span class="mega-icon"><i class="fa fa-arrow-right"></i></span><span><strong>Explore solutions</strong><small>Find a solution for your security workflow.</small></span></a>
+                  </div>
+                  <div class="mega-visual-card">
+                    <img src="images/placeholder.jpg" alt="Solution preview placeholder">
+                    <div class="mega-visual-content"><span>SOLUTION</span><h4>See what your cameras are missing</h4><p>Feature your strongest solution or case study here.</p><a href="#">Discover solutions <i class="fa fa-arrow-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Integrations -->
+            <li class="nav-item dropdown mega-nav-item">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                Integrations <i class="fa fa-chevron-down dropdown-icon"></i>
+              </a>
+              <div class="dropdown-menu mega-menu mega-reference-menu mega-reference-menu-narrow">
+                <div class="mega-reference-grid mega-reference-grid-2">
+                  <div class="mega-menu-column mega-menu-featured">
+                    <div class="mega-menu-label">VMS INTEGRATIONS</div>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fas fa-dna"></i></span><span><strong>Genetec</strong><small>Connect AssetGuard intelligence with your VMS workflow.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-diamond"></i></span><span><strong>Milestone</strong><small>Bring AI-powered monitoring into your existing environment.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-plug"></i></span><span><strong>Existing Camera Systems</strong><small>Designed to work with compatible existing infrastructure.</small></span></a>
+                    <a href="#" class="mega-menu-link mega-view-all"><span class="mega-icon"><i class="fa fa-arrow-right"></i></span><span><strong>View integrations</strong><small>Explore supported integration options.</small></span></a>
+                  </div>
+                  <div class="mega-visual-card">
+                    <img src="images/placeholder.jpg" alt="Integration preview placeholder">
+                    <div class="mega-visual-content"><span>INTEGRATIONS</span><h4>Keep the systems you already use</h4><p>Use this placeholder for an integration diagram or partner visual.</p><a href="#">See integrations <i class="fa fa-arrow-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Company -->
+            <li class="nav-item dropdown mega-nav-item">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                Company <i class="fa fa-chevron-down dropdown-icon"></i>
+              </a>
+              <div class="dropdown-menu mega-menu mega-reference-menu mega-reference-menu-narrow mega-menu-align-right">
+                <div class="mega-reference-grid mega-reference-grid-2">
+                  <div class="mega-menu-column mega-menu-featured">
+                    <div class="mega-menu-label">COMPANY</div>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-info-circle"></i></span><span><strong>About</strong><small>Learn more about AssetGuard and our approach.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-newspaper-o"></i></span><span><strong>Press</strong><small>News, announcements and company updates.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-envelope"></i></span><span><strong>Contact</strong><small>Talk with our team about your security needs.</small></span></a>
+                    <a href="#" class="mega-menu-link"><span class="mega-icon"><i class="fa fa-question-circle"></i></span><span><strong>FAQs</strong><small>Answers to common product and service questions.</small></span></a>
+                  </div>
+                  <div class="mega-visual-card">
+                    <img src="images/placeholder.jpg" alt="Company preview placeholder">
+                    <div class="mega-visual-content"><span>ASSETGUARD AI</span><h4>Australian security intelligence</h4><p>Replace this image with your team, office or brand photography.</p><a href="#">About us <i class="fa fa-arrow-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <!-- Book Demo -->
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+
+              <a href="#" class="book-a-demo-button">
+
+                <span>
+                  Book a demo
+                </span>
+
+                <span class="book-a-demo-icon">
+                  <i class="fa fa-arrow-right"></i>
+                </span>
+
+              </a>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+
+        <div class="container">
+            <div class="hero_contents text-start text-sm-center"> 
+            <h1 class="hero-heading"><span class="yellow-text">AI-Powered Security.</span> Built for 
+Real-World Australian Businesses</h1>
+<p>AssetGuard AI upgrades your existing CCTV system with real-time intelligence, 
+helping you detect threats early and act before any losses occur. Designed for local
+businesses and industries, we provide a cost-effective route to advanced, proactive security.</p>
+
+    <a href="#" class="heavy-button">
+        Request a Solution Design
+        </a>
+            </div>
+            <!-- hero_contents end -->
+            <div class="hero_cards">
+                <div class="hero-card">
+                    <img
+                        src="images/camera-icon.png"
+                        class="img-fluid"
+                        alt="Hero Card 1" >
+                        <p class="gen-p">Works with your existing hardware - no rip-and-replace.</p>
+                </div>
+
+                <div class="hero-card ">
+                   
+                     <img
+                        src="images/au-map.png"
+                        class="img-fluid"
+                        alt="Hero Card 1" >
+                   
+                        <p class="gen-p">100% Australian-based setup, configuration and ongoing support.</p>
+                </div>
+
+                <div class="hero-card">
+                    <img
+                        src="images/security-badge.png"
+                        class="img-fluid"
+                        alt="Hero Card 1" >
+                        <p class="gen-p">Privacy-conscious by design, compliant with Australian standards.</p>
+                </div>
+            </div>
+        </div>
+  </section>
+
+  <section class="py-7 modern_risk_section">
+    <div class="container">
+        <h2 class="sec_sub_heading text-center text-white">Advanced Security for <span class="yellow-text">Modern Risks</span>   </h2>
+        <div class="row mt-5 d-flex align-items-center">
+            <div class="col-12 col-md-6">
+                <img
+                    src="images/modern-risk-dashboard.png"
+                    class="img-fluid"
+                    alt="Modern Risk Dashboard" > 
+            </div>
+            <div class="col-12 col-md-6">
+                <h3 class="sub_sub_heading">Why traditional surveillance isn't enough anymore</h3>
+                <p class="gen-p text-start mt-4">
+                    Business owners in Australia tend to rely on CCTV as their primary line of defense. You install the cameras, record the footage and hope for the best. As commonplace as these systems may be, however, they’re of limited practical use. By the time you find out that an incident has occurred (normally, the next morning), the damage is already done.
+                    <br>      
+                    <span class="yellow-text d-inline-block mt-3 t">AssetGuard AI </span> changes this, transforming your security from a reactive process into a proactive one.
+                </p>
+                <a href="#" class="book-a-demo-button mt-3">
+
+                <span>
+                  Book a demo
+                </span>
+
+                <span class="book-a-demo-icon">
+                  <i class="fa fa-arrow-right"></i>
+                </span>
+
+              </a>
+
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- risk modern dashboard section end -->
+
+<section class="video-stats-section">
+
+  <!-- Background video -->
+  <video
+    class="video-stats-bg"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+  >
+    <source src="images/myvideo.mp4" type="video/mp4">
+  </video>
+
+  <!-- Blue video tint -->
+  <div class="video-stats-tint"></div>
+
+  <!-- Figma gradient -->
+  <div class="video-stats-gradient"></div>
+
+  <!-- Content -->
+  <div class="container position-relative video-stats-content">
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 col-xl-9 text-center">
+
+        <p class="gen-p-smaller yellow-text">
+          At-a-glance updates across all activity
+        </p>
+
+        <h2 class="video-stats-heading">
+          Manage the security, compliance and
+          <br class="d-none d-md-block">
+          integrity of your critical data and assets
+        </h2>
+
+        <!-- Stats -->
+        <div class="row justify-content-center video-stats-numbers g-4">
+
+          <div class="col-6 col-md-4">
+            <div class="video-stat">
+              <div class="video-stat-value">
+                $1.<span class="stat-counter" data-target="1">1</span>M
+              </div>
+
+              <div class="video-stat-line"></div>
+
+              <p>
+                Savings from obsolescence
+                <br>
+                management
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="video-stat">
+              <div class="video-stat-value">
+                <span class="stat-counter" data-target="44">44</span>
+              </div>
+
+              <div class="video-stat-line"></div>
+
+              <p>
+                Days average time to value
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="video-stat">
+              <div class="video-stat-value">
+                $<span class="stat-counter" data-target="3">3</span>M+
+              </div>
+
+              <div class="video-stat-line"></div>
+
+              <p>
+                Savings from prevented cyber
+                <span class="d-inline d-md-block"></span>>
+                security incidents
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- video section end -->
+
+  <section class="main-slider-section py-7">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <h2 class="sub_sub_heading">Real-Time Threat Detection</h2>
+          <p class="gen-p text-start">In stead of analysing CCTV footage from yesterday, our AI looks at what's going on right now. It identifies behaviors that often signal an imminent crime - loitering, unauthorised vehicles and people, etc. - and alerts you before the crime is completed.</p>  
+          <a href="#" class="book-a-demo-button mt-3">
+
+                <span>
+                  Get in Touch
+                </span>
+
+                <span class="book-a-demo-icon">
+                  <i class="fa fa-arrow-right"></i>
+                </span>
+
+              </a>
+
+
+              <div class="d-none d-lg-block">
+                <div class="slider_arrows">
+  <button class="slider_prev" type="button">
+    <i class="fa fa-arrow-left"></i>
+  </button>
+
+  <button class="slider_next" type="button">
+    <i class="fa fa-arrow-right"></i>
+  </button>
+</div>
+              </div>
+        </div>
+        <!-- left end -->
+
+        <div class="col-12 col-lg-8">
+          <div class="actual_slider">
+           <div class="slider_card">
+  <img
+    src="images/slide1.png"
+    alt="Theft and Intrusion"
+    class="slider_card_img"
+  />
+
+  <div class="slider_card_overlay"></div>
+
+  <div class="slider_card_content position-absolute">
+    <a href="#" class="slider_card_title ">
+      Theft & Intrusion Prevention System
+    </a>
+
+    <p class="slider_card_text mb-0">
+      Stop unauthorised access, fuel theft and equipment loss.
+    </p>
+  </div>
+</div>
+            <!-- slider card -->
+
+            <div class="slider_card">
+  <img
+    src="images/slide1.png"
+    alt="Theft and Intrusion"
+    class="slider_card_img"
+  />
+
+  <div class="slider_card_overlay"></div>
+
+  <div class="slider_card_content position-absolute">
+    <a href="#" class="slider_card_title ">
+      Theft & Intrusion Prevention System
+    </a>
+
+    <p class="slider_card_text mb-0">
+      Stop unauthorised access, fuel theft and equipment loss.
+    </p>
+  </div>
+</div>
+            <!-- slider card -->
+
+
+            <div class="slider_card">
+  <img
+    src="images/slide1.png"
+    alt="Theft and Intrusion"
+    class="slider_card_img"
+  />
+
+  <div class="slider_card_overlay"></div>
+
+  <div class="slider_card_content position-absolute">
+    <a href="#" class="slider_card_title ">
+      Theft & Intrusion Prevention System
+    </a>
+
+    <p class="slider_card_text mb-0">
+      Stop unauthorised access, fuel theft and equipment loss.
+    </p>
+  </div>
+</div>
+            <!-- slider card -->
+
+
+          </div>
+          <!-- actual_slider end -->
+
+          <div class="d-block d-lg-none text-center mt-0">
+                <div class="slider_arrows">
+  <button class="slider_prev" type="button">
+    <i class="fa fa-arrow-left"></i>
+  </button>
+
+  <button class="slider_next" type="button">
+    <i class="fa fa-arrow-right"></i>
+  </button>
+</div>
+              </div>
+              <!-- center arrows on tablet -->
+        </div>
+        <!-- right end  -->
+      </div>
+    </div>
+  </section>
+  <!-- main-slider-section end -->
+
+
+  <section class="advantages py-7">
+    <div class="container">
+      <div class="row g-4 d-flex align-items-center">
+        <div class="col-12 col-md-6">
+          <img
+            src="images/assetguardai-advantages.png"
+            class="img-fluid"
+            alt="Advantages" >
+        </div>
+        <div class="col-12 col-md-6 text-start">
+          <h3 class="sub_sub_heading">The AssetGuard AI Advantage</h3> 
+
+          <div class="text-white mt-4">
+            <h4 class="heading-four">The smarter way to upgrade your security</h4>
+            <p class="gen-p-smaller">You don’t need more cameras, you just need smarter ones. While many security companies will try to sell you an entirely new suite of hardware, AssetGuard offers local businesses a cost-effective way forward.</p>
+          </div>
+
+          <div class="text-white mt-4">
+            <h4 class="heading-four">Works With What You Have</h4>
+            <p class="gen-p-smaller">AssetGuard AI is designed to sit on top of your current infrastructure. If you have IP cameras and a network connection, you’re ready to go. We integrate with your existing systems, adding AI insight without the expensive rip-and-replace price tag.</p>
+          </div>
+
+
+           <div class="text-white mt-4">
+            <h4 class="heading-four">Smart, Targeted Detection</h4>
+            <p class="gen-p-smaller">The biggest problem with standard motion detection is false alarms. If your phone pings every time a tree moves in the wind or a cat runs past, you’ll eventually stop looking at the alerts. AssetGuard AI uses advanced behavioral filters to ignore the noise and focus on real risks: intrusion, loitering and asset interference.</p>
+          </div>
+
+          <div class="text-white mt-4">
+            <h4 class="heading-four">Local Setup & Support</h4>
+            <p class="gen-p-smaller">We’re an Australian company. When you call for support, you’re talking to a team that understands the local landscape, whether it’s the logistics hubs of Melbourne or the agricultural properties of regional Queensland. As well as providing local support, we handle the setup, fine-tuning and the ongoing maintenance of your system so you don’t need to be a tech expert to get going.</p>
+          </div>
+          <a href="#" class="book-a-demo-button mt-3">
+
+                <span>
+                  Get in Touch
+                </span>
+
+                <span class="book-a-demo-icon">
+                  <i class="fa fa-arrow-right"></i>
+                </span>
+
+              </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="desc_section py-7 pt-0 pt-md-7 text-start">
+    <div class="container text-white">
+      <div class="row g-4 gx-5 gy-0 g-md-5 d-flex align-items-center">
+        <div class="col-12 col-md-6">
+          <img
+            src="images/real-time-treat-detection.png"
+            class="img-fluid"
+            alt="real Time Threat Detection" >
+        </div>
+        <div class="col-12 col-md-6">
+          <h3 class="sub_sub_heading">Real-Time Threat Detection</h3>
+          <p class="gen-p">The system is trained to recognise specific threats, including unauthorised persons in restricted zones or suspicious vehicles. It provides the early detection needed to intervene or call authorities.</p> 
+        </div>
+      </div>
+      <!-- 1 end -->
+      <div class="row g-4 gx-5 gy-0 g-md-5 d-flex align-items-center">
+        <div class="col-12 col-md-6 order-1 order-md-2">
+            <img
+            src="images/instant-alert.png"
+            class="img-fluid"
+            alt="Instant Alerts" >
+        </div>
+        <div class="col-12 col-md-6 order-2 order-md-1">
+          <h3 class="sub_sub_heading">Instant Alerts</h3>
+          <p class="gen-p">No more nasty surprises in the morning. When a
+high-priority risk is detected, you get an immediate notification on your smartphone or desktop.
+You see what the AI sees, as it happens.</p> 
+        </div>
+        
+      </div>
+      <!-- 2nd end -->
+      <div class="row g-4 gx-5 gy-0 g-md-5 d-flex align-items-center">
+        <div class="col-12 col-md-6">
+          <img
+            src="images/track-movments-and-behaviours.png"
+            class="img-fluid"
+            alt="Tracks Movement & Behaviour" >
+        </div>
+        <div class="col-12 col-md-6">
+          <h3 class="sub_sub_heading">Tracks Movement & Behaviour</h3>
+          <p class="gen-p">Criminals often survey a property before they strike. AssetGuard AI identifies loitering, repeat visits and unusual activity patterns, allowing you to identify a threat during the planning phase, not the execution phase.</p> 
+        </div>
+      </div>
+      <!-- 3 end -->
+      <div class="row g-4 gx-5 gy-0 g-md-5 d-flex align-items-center">
+        <div class="col-12 col-md-6 order-1 order-md-2">
+            <img
+            src="images/protects-access-points.png"
+            class="img-fluid"
+            alt="Protects Access Points" >
+        </div>
+        <div class="col-12 col-md-6 order-2 order-md-1">
+          <h3 class="sub_sub_heading">Protects Access Points</h3>
+          <p class="gen-p">Monitor your gates and loading docks with precision. Our AI can detect tailgating (where a vehicle follows an authorised person through a gate) and breaches of restricted areas.</p> 
+        </div>
+        
+      </div>
+      <!-- 4nd end -->
+      <div class="row g-4 gx-5 gy-0 g-md-5 d-flex align-items-center">
+        <div class="col-12 col-md-6">
+          <img
+            src="images/monitors-assets-equipment.png"
+            class="img-fluid"
+            alt="Monitors Assets & Equipment" >
+        </div>
+        <div class="col-12 col-md-6">
+          <h3 class="sub_sub_heading">Monitors Assets & Equipment</h3>
+          <p class="gen-p">High-value assets like fuel tanks, heavy machinery and stock yards are often prime targets. Our AI recognises interaction with these specific objects, alerting you if someone is touching your equipment after hours.</p> 
+        </div>
+      </div>
+      <!-- 5 end -->
+       <div class="text-center py-3">
+        <a href="#" class="heavy-button">
+        Get in Touch
+        </a>
+       </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="text-center">
+        <h2 class="sec_sub_heading yellow-text ">Integration & Compliance</h2>  
+      <p class="gen-p">Easy to Set Up. Secure by Design.</p>
+      <p class="gen-p">We’ve made the process of getting enterprise-grade AI as simple as possible for everyday business owners.</p>
+      </div>
+
+      <div class="py-7 text-center">
+        <h3 class="heading-four yellow-text text-center">How It Works</h3>  
+        <h2 class="sec_sub_heading text-white py-2">Simple. Smart. Effective.</h2>
+        <span class="hbar"></span>
+      </div>
+
+      <div class="process_flow">
+
+      <!-- Step 1 -->
+      <div class="process_item">
+
+        <div class="process_visual">
+          <img src="images/input.png" alt="Input cameras">
+        </div>
+
+        <div class="process_card">
+          <img src="images/input-icon.png" class="img-fluid" alt="input icon">
+          <h4>Input</h4>
+          <img src="images/line.png" class="img-fluid mt-0" alt="Line" />
+
+          <p class="gen-p-smaller text-white">
+            We connect to your existing cameras and sensors.
+          </p>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div class="process_arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="15" viewBox="0 0 111 15" fill="none">
+<path d="M1 6.36426H0V8.36426H1V7.36426V6.36426ZM110.707 8.07136C111.098 7.68084 111.098 7.04768 110.707 6.65715L104.343 0.29319C103.953 -0.0973344 103.319 -0.0973344 102.929 0.29319C102.538 0.683714 102.538 1.31688 102.929 1.7074L108.586 7.36426L102.929 13.0211C102.538 13.4116 102.538 14.0448 102.929 14.4353C103.319 14.8259 103.953 14.8259 104.343 14.4353L110.707 8.07136ZM1 7.36426V8.36426H110V7.36426V6.36426H1V7.36426Z" fill="#D8F96F"/>
+</svg>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="process_item">
+
+        <div class="process_visual">
+          <img src="images/process.png" alt="Input cameras">
+        </div>
+
+        <div class="process_card">
+          <img src="images/process-gear.png" class="img-fluid" alt="input icon">
+          <h4>Input</h4>
+          <img src="images/line.png" class="img-fluid mt-0" alt="Line" />
+
+          <p class="gen-p-smaller text-white">
+            AssetGuard AI runs in the background. Depending on your needs, this can be handled via a small on-site device or through a secure cloud connection.
+          </p>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div class="process_arrow ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="15" viewBox="0 0 111 15" fill="none">
+<path d="M1 6.36426H0V8.36426H1V7.36426V6.36426ZM110.707 8.07136C111.098 7.68084 111.098 7.04768 110.707 6.65715L104.343 0.29319C103.953 -0.0973344 103.319 -0.0973344 102.929 0.29319C102.538 0.683714 102.538 1.31688 102.929 1.7074L108.586 7.36426L102.929 13.0211C102.538 13.4116 102.538 14.0448 102.929 14.4353C103.319 14.8259 103.953 14.8259 104.343 14.4353L110.707 8.07136ZM1 7.36426V8.36426H110V7.36426V6.36426H1V7.36426Z" fill="#D8F96F"/>
+</svg>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="process_item">
+
+        <div class="process_visual">
+          <img src="images/action.png" alt="action in process">
+        </div>
+
+        <div class="process_card">
+          <img src="images/bell-icon.png" class="img-fluid" alt="input icon">
+          <h4>Action</h4>
+          <img src="images/line.png" class="img-fluid mt-0" alt="Line" />
+
+          <p class="gen-p-smaller text-white">
+            You receive clear, real-time alerts only when something needs your attention.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <!-- process flow end -->
+    </div>
+  </section>
+
+  <section class="py-7 text-center">
+    <div class="container">
+      <h2 class="sec_sub_heading yellow-text">A Note on Privacy & Security</h2>
+        <span class="hbar mt-4"></span>
+
+      <p class="gen-p mt-4  m-auto">Data security is, of course, a major concern for Australian businesses. AssetGuard AI is built with "Privacy by Design", supporting Australian Privacy Act compliance and ensuring you have total control over your data. You decide what’s recorded, how long it’s kept, and who’s allowed to see it. In addition to this, we process data locally whenever possible to deliver maximum security and speed.</p>
+    </div>
+  </section>
+
+  <section class="upgrade-it">
+    <div class="container">
+      <div class="py-7 text-center">
+        <h3 class="heading-four yellow-text text-center">Don't Replace Your System. </h3>  
+        <h2 class="sec_sub_heading text-white py-2">Upgrade It.</h2>
+        <span class="hbar"></span>
+        <p class="gen-p">At <span class="yellow-text">AssetGuard AI,</span> our goal is to make your existing security <span class="d-inline d-md-block"></span> system work smarter and harder.</p>
+
+        <div class="divider d-flex align-items-center px-1 px-md-4">
+          <img src="images/left-divider.png" alt="" class="img-fluid">
+          <div class="centertext">
+            <p class="gen-p-smaller">OUR FULL-SERVICE APPROACH INCLUDES</p>
+          </div>
+          <img src="images/right-divider.png" alt="" class="img-fluid">
+        </div>
+        <!-- divider end -->
+
+        <div class="upgrade-card d-flex align-items-center mt-5">
+
+          <div class="upgrade-card-icon">
+            <img src="images/custom-setup.png" alt="Custom Setup">
+          </div>
+
+          <div class="upgrade-card-number d-flex align-items-center justify-content-center">
+            01
+          </div>
+
+          <div class="upgrade-card-line"></div>
+
+          <div class="upgrade-card-content">
+            <h3>Custom Setup and Configuration</h3>
+            <p>
+              We tailor our AI's "vision" to your specific yard, warehouse or storefront.
+            </p>
+          </div>
+
+        </div>
+        <!-- 1 end -->
+
+         <div class="upgrade-card d-flex align-items-center mt-4">
+
+          <div class="upgrade-card-icon">
+            <img src="images/smooth-integration.png" alt="Custom Setup">
+          </div>
+
+          <div class="upgrade-card-number d-flex align-items-center justify-content-center">
+            02
+          </div>
+
+          <div class="upgrade-card-line"></div>
+
+          <div class="upgrade-card-content">
+            <h3>Smooth Integration</h3>
+            <p>
+              We make sure the AI talks perfectly to your current NVR and cameras.
+            </p>
+          </div>
+
+        </div>
+        <!-- 2 end -->
+
+         <div class="upgrade-card d-flex align-items-center mt-4">
+
+          <div class="upgrade-card-icon">
+            <img src="images/ongoing-support.png" alt="Custom Setup">
+          </div>
+
+          <div class="upgrade-card-number d-flex align-items-center justify-content-center">
+            03
+          </div>
+
+          <div class="upgrade-card-line"></div>
+
+          <div class="upgrade-card-content">
+            <h3>Ongoing Local Support</h3>
+            <p>
+              As your business grows or your layout changes, we’re here to update and optimise your system.
+            </p>
+          </div>
+
+        </div>
+        <!-- 3 end -->
+
+        <div class="upgrade-card d-flex align-items-center mt-5 shadow-yellow">
+
+          <div class="upgrade-card-icon">
+            <img src="images/secure.png" alt="Custom Setup">
+          </div>
+
+          
+
+          <div class="upgrade-card-line"></div>
+
+          <div class="upgrade-card-content text-start">
+            
+            <p>
+             No complex rebuild. No unnecessary hardware.
+            </p>
+             <p>
+            Just a practical, powerful upgrade that <span class="yellow-text">starts working for you immediately.</span> 
+            </p>
+          </div>
+
+        </div>
+        <!-- 3 end -->
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="stat-of-art py-7">
+    <div class="container">
+      <div class="main-start-of-art">
+        <div class="row g-4 flx">
+          <div class="col-12 col-md-5">
+            <img src="images/state-of-art-left.png" class="img-fluid" alt="State-of-the-Art Security
+for Every Australian Business">
+          </div>
+          <div class="col-12 col-md-7">
+            <p class="gen-p-smaller yellow-text">ASSETGUARD AI</p>
+            <h2 class="sub_sub_heading text-white my-4">State-of-the-Art Security <br>
+for Every Australian Business</h2> 
+              <span class="hbar"></span>
+
+            <p class="gen-p mt-3">Don't wait for the next incident to find out your security isn't enough. Protect your livelihood and your staff with the smartest AI security solution in Australia. Speak to a specialist today and see how AssetGuard AI can work with your current setup.</p>
+
+              <a href="" class="request-btn mt-4" >
+                <img src="images/security-check.png" class="img-fluid" alt="secuirty check">
+                Request a System Upgrade
+                 <img src="images/arrow-right.png" class="img-fluid" alt="arrow right">
+
+              </a>
+          </div>
+        </div>
+        <!-- row end -->
+
+        <div class="about">
+          <div class="row g-4 g-lg-0 flx">
+            <div class="col-12 col-md-5">
+              <div class="row flx">
+
+                <div class="col-12  col-lg-3 text-center">
+                    <img src="images/secure.png" alt="Custom Setup" class="m-0">
+                  
+                </div>
+                <div class="col-12 col-lg-9 text-center text-lg-start">
+                  <p class="gen-p-smaller yellow-text">ABOUT ASSETGUARD AI</p>
+                  <h4 class="heading-four text-white">Intelligent Security. <span class="d-inline d-lg-block"></span>   
+Seamlessly Integrated.</h4>
+                </div>
+              </div>
+              <!-- row end -->
+
+              <div class="row mt-4">
+                <div class="col-6 col-lg-3">
+                  <div class="feature-card text-center">
+                    <div class="feature-card-image">
+                    <img src="images/australia-map.png" class="feature-icon" alt="australia-map">
+                    </div>
+                    <p class="gen-p-smaller text-white">Australian Developed</p>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="feature-card text-center">
+                    <div class="feature-card-image">
+                    <img src="images/ai-power-intellegince.png" class="feature-icon" alt="AI-Powered
+Intelligence"></div>
+                    <p class="gen-p-smaller text-white">AI-Powered
+Intelligence</p>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="feature-card text-center">
+                    <div class="feature-card-image">
+                    <img src="images/sheild.png" class="feature-icon" alt="Proactive
+Protection">
+</div>
+                    <p class="gen-p-smaller text-white">Proactive
+Protection</p>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="feature-card text-center">
+                    <div class="feature-card-image">
+                    <img src="images/actionable-insights.png" class="feature-icon" alt="Actionable
+Insights"></div>
+                    <p class="gen-p-smaller text-white">Actionable
+Insights</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-12 col-md-7 text-white">
+              <p class="gen-p-smaller">AssetGuard AI is a leading Australian security intelligence platform that transforms traditional video surveillance into a proactive defense system. Developed by Sec Systems, our technology bridges the gap between passive recording and real-time intervention.</p>
+
+              <hr class="thickhr">
+              <p class="gen-p-smaller">Integrating smoothly with your existing security surveillance cameras, our platform uses advanced behavioral analytics to detect pre-incident patterns – such as loitering, unauthorised asset interaction and perimeter breaches – before an incident occurs. From agriculture and logistics to retail and industrial businesses, we provide the actionable intelligence needed to reduce financial risk and improve operational safety without the need for costly hardware overhauls.</p>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+  <!-- state of art end -->
+
+
+  <section class="faq-section py-7">
+  <div class="container">
+    <h2 class="sec_sub_heading text-center yellow-text">Frequently Asked Questions</h2>
+    <div class="accordion faq-accordion mt-5" id="faqAccordion">
+
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faqOne"
+            aria-expanded="false"
+            aria-controls="faqOne"
+          >
+            What is Asset Guardian?
+          </button>
+        </h2>
+
+        <div
+          id="faqOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="faqHeadingOne"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            Asset Guardian is an intelligent security solution that uses AI to
+            help detect threats and monitor your site in real time.
+          </div>
+        </div>
+      </div>
+
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faqTwo"
+            aria-expanded="false"
+            aria-controls="faqTwo"
+          >
+            What industries benefit from using Asset Guardian?
+          </button>
+        </h2>
+
+        <div
+          id="faqTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="faqHeadingTwo"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            Asset Guardian can be used in warehouses, construction sites,
+            retail locations, industrial facilities, yards and other areas
+            where security monitoring is important.
+          </div>
+        </div>
+      </div>
+
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faqThree"
+            aria-expanded="false"
+            aria-controls="faqThree"
+          >
+            Is it customisable?
+          </button>
+        </h2>
+
+        <div
+          id="faqThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="faqHeadingThree"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            Yes. The system can be configured according to your site,
+            existing cameras and specific security requirements.
+          </div>
+        </div>
+      </div>
+
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faqFour"
+            aria-expanded="false"
+            aria-controls="faqFour"
+          >
+            What are the benefits?
+          </button>
+        </h2>
+
+        <div
+          id="faqFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="faqHeadingFour"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            It helps improve response times, reduce unnecessary monitoring
+            and provides real-time alerts when something requires attention.
+          </div>
+        </div>
+      </div>
+
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faqFive"
+            aria-expanded="false"
+            aria-controls="faqFive"
+          >
+            How can I get started?
+          </button>
+        </h2>
+
+        <div
+          id="faqFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="faqHeadingFive"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            Contact our team and we will discuss your requirements, existing
+            setup and the best solution for your site.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- faq end -->
+
+  <div class="container py-7">
+    <div class="main-cta">
+      <h4 class="heading-four text-white"><b>Ready to get started?</b> Discover Asset Guardian</h4>
+      <a href="#" class="book-a-demo-button"><span>Book a demo</span>
+        <span class="book-a-demo-icon"> <i class="fa fa-arrow-right"></i></span>
+      </a>
+    </div>
+  </div>
+
+
+
+
+  <footer class="main-footer d-none">
+    <div class="container">
+       <div class="logo-flex flx">
+            <img src="images/logo.png" class="img-fluid" alt="AssetguardAi icon">
+            <!-- <span>Asset Guardian</span> -->
+          </div>
+          
+           <div class="row gy-4 footer-main">
+
+      <!-- Left menu -->
+      <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+        <ul class="footer-menu list-unstyled mb-0">
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Who it’s for</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </div>
+
+      <!-- Middle -->
+      <div class="col-12 col-sm-6 col-md-3 col-lg-4">
+        <h4 class="footer-title">Asset Guardian</h4>
+
+        <ul class="footer-links list-unstyled mb-0">
+          <li><a href="#">Why Us</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Right -->
+      <div class="col-12 col-sm-8 col-md-6 col-lg-5">
+        <div class="d-flex justify-content-between align-items-start gap-3">
+
+          <div>
+            <h4 class="footer-title">Contact Us</h4>
+
+            <p class="footer-label">Sales & product information:</p>
+
+            <a href="tel:+4401313763500" class="footer-contact">
+              <i class="fa fa-phone"></i>
+              +44(0)131 376 3500
+            </a>
+
+            <a href="mailto:sales@assetguardian.com" class="footer-contact">
+              <i class="fa fa-envelope"></i>
+              sales@assetguardian.com
+            </a>
+
+            <p class="footer-label mt-3">Support:</p>
+
+            <a href="mailto:support@assetguardian.com" class="footer-contact">
+              <i class="fa fa-envelope"></i>
+              support@assetguardian.com
+            </a>
+          </div>
+
+          <div class="footer-social d-flex gap-3">
+            <a href="#" aria-label="X">
+              <img src="images/x-icon.png" class="img-fluid" alt="Twitter icon or x icon">
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+              <img src="images/linkedin.png" class="img-fluid" alt="linkedin icon">
+
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <div class="row align-items-center gy-2">
+
+        <div class="col-12 col-sm-6 col-12 col-md-6">
+          <p class="mb-0 text-center text-sm-start">
+            Copyright © 2026 Asset Guardian
+          </p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 text-center text-sm-end">
+          <a href="#">Terms and Conditions</a>
+          <span class="px-2 py-2"></span>
+          <a href="#">Privacy</a>
+        </div>
+
+        
+
+      </div>
+    </div>
+
+
+    </div>
+  </footer>
+  <!-- main footer end -->
+
+
+
+
+  <footer class="forfooter text-white pb-1">
+      <div class="container px_2">
+        <div class="row " style="border-bottom:1px solid #e6e7e8;">
+          <div class="col-12 col-md-12 col-lg-4 noponmobile mb3">
+            <img src="images/logo.png" class="img-fluid footer_logo" alt="Montana logo footer">
+            <p class="footer_p mt-4  pe-0 pe-md-4"> Ensure top-notch security for your property with advanced, reliable systems designed to protect and provide peace of mind.</p>
+            <ul class="social_icons my-3 ">
+              <li>
+                <a href="https://www.facebook.com/share/14XCcbpq1tD/" class="fab fa-facebook-f"></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/safetyanalytics?igsh=eGxuemxxZW4zeXVl" class="fab fa-instagram"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-12 col-lg-8 fotlink pb-5 mt-5 mt-lg-0">
+            <div class="row">
+              <div class="col-12 col-md-4 mb3 noponmobile">
+                <h5 class="footerheading">Services</h5>
+                <ul class="footer_menu_ul">
+                  <li>
+                    <a href="cameras.html">CCTV Security Camera Systems</a>
+                  </li>
+                  <li>
+                    <a href="intercoms.html">Video Intercom Systems</a>
+                  </li>
+                  <li>
+                    <a href="alarms.html">Home Alarm System</a>
+                  </li>
+                  <li>
+                    <a href="access-control.html">Access Controls</a>
+                  </li>
+                  <li>
+                    <a href="smart-wire.html">Smart Home Wiring</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 mb3  ps-md-4">
+                <h5 class="footerheading">Quick Links</h5>
+                <ul class="footer_menu_ul">
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="about-us.html">About us</a>
+                  </li>
+                  <li>
+                    <a href="packages.html">Packages</a>
+                  </li>
+                  <li>
+                    <a href="bookings.html">Bookings</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- links end -->
+              <div class="col-12 col-md-4 noponmobile mb3">
+                <h5 class="footerheading">Company</h5>
+                <p class="foot-p  mt-4">
+                  <b>Contact info Sec Systems </b>
+                
+                <!-- <div class="mt-1 addrss">
+                  <i class="fa fa-map-marker-alt lifafa"></i>
+                  <p class="ff-link d-inline"> Po Box 379, <span class="d-block add_pding_lft">Moonee Ponds, VIC </span>
+                  </p>
+                </div> -->
+                <div class="mt-1">
+                  <i class="fa fa-envelope lifafa"></i>
+                  <a href="mailto:info@secsystems.net.au" class="ff-link"> info@secsystems.net.au</a>
+                </div>
+                <div class="mt-1">
+                  <i class="fa fa-phone lifafa"></i>
+                  <a href="tel:03 9370 7579" class="ff-link">03 9370 7579</a>
+                </div>
+              </div>
+            </div>
+            <!-- row end -->
+          </div>
+        </div>
+        <!-- row end -->
+        <div class="row my-3  d-flex align-items-center">
+          <div class="col-12 col-md-12 col-xl-6 text-center text-xl-start ">
+            <p class="copyright_text">&copy; <span id="currentYear"></span> All Rights Reserved  </p>
+          </div>
+          <div class="col-12 col-md-12 col-xl-6 text-center text-xl-end">
+            <ul class="privacy_menu p-0 m-0 mt-4 mt-xl-0">
+              
+              <li>
+                <!-- <a href="monitoring.html">Monitoring</a> -->
+              </li>
+              <li>
+                <a href="privacy-policy.html">Privacy Policy</a>
+              </li>
+              <li class="space_x">|</li>
+              <li>
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- container end -->
+    </footer>
+
+
+
+  <!-- Scripts -->
+  <script src="js/jquery.js"></script>
+
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- slickslider -->
+    <script src="js/slick.min.js"></script>
+  <script src="js/custome_script.js"></script>
+
+</body>
+
+</html>
